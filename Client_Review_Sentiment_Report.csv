@@ -1,0 +1,6 @@
+Original_Review,Cleaned_Review,Polarity,Subjectivity,VADER_Compound,Sentiment,Confidence_Score
+Kwatra Legal LLP is the best Trademark registration firm I’ve come across.,kwatra legal llp is the best trademark registration firm ive come across,0.3333333333333333,0.3,0.6908,Positive,0.51
+They delayed my Trademark objection and I had to follow up repeatedly.,they delayed my trademark objection and i had to follow up repeatedly,0.0,0.0,-0.2263,Neutral,0.11
+"Their FSSAI service was great, but the Trademark process was confusing.",their fssai service was great but the trademark process was confusing,0.25,0.575,0.0516,Positive,0.15
+Super professional and helpful IPR team!,super professional and helpful ipr team,0.21666666666666667,0.3833333333333333,0.7717,Positive,0.49
+Disappointed by how long it took to receive updates.,disappointed by how long it took to receive updates,-0.4,0.575,-0.4767,Negative,0.44
