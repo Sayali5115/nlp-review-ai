@@ -1,54 +1,115 @@
-CLIENT REVIEW SENTIMENT ANALYSIS (NLP Project)
+# Client Review Sentiment Analysis
 
-An NLP-based sentiment analysis project developed during my internship to analyze client reviews using TextBlob and VADER.
+An NLP-based sentiment analysis project developed during my internship to analyze and classify client reviews using TextBlob and VADER.
 
-OVERVIEW
+---
 
-This project analyzes client reviews and classifies them into Positive, Neutral, or Negative sentiment. It combines TextBlob and VADER sentiment scoring techniques and introduces a custom confidence score.
+## Overview
 
-TECH STACK
+This project analyzes client reviews and classifies them into **Positive**, **Neutral**, or **Negative** sentiment categories.
 
-Python
-Pandas & NumPy
-TextBlob
-NLTK (VADER)
-Matplotlib & Seaborn
+It combines multiple Natural Language Processing techniques and introduces a custom confidence scoring mechanism to evaluate sentiment strength.
 
-WORKFLOW
+The final output is exported as structured CSV reports for business insights and review analytics.
 
-Text cleaning using regex
-Sentiment scoring using:
-TextBlob (Polarity, Subjectivity)
-VADER (Compound score)
-Sentiment classification based on polarity
-Confidence score calculation
-CSV report generation
-Sentiment visualization
+---
 
-REPORTS INCLUDED
+## What This Project Provides
 
-Client_Review_Sentiment_Report.csv
-Client_Review_Sentiment_Report1.csv
-Client_Review_Sentiment_Report2.csv
+- Text preprocessing using regular expressions
+- Sentiment scoring using **TextBlob**
+- Sentiment scoring using **VADER (NLTK)**
+- Custom confidence score calculation
+- Sentiment distribution visualization
+- Structured CSV report generation
+
+---
+
+## NLP Workflow
+
+### 1. Data Preprocessing
+
+- Converted text to lowercase  
+- Removed URLs  
+- Removed punctuation  
+- Removed extra whitespace  
+
+### 2. Sentiment Analysis
+
+Two approaches were implemented:
+
+**TextBlob**
+- Polarity score (-1 to +1)
+- Subjectivity score (0 to 1)
+
+**VADER (NLTK)**
+- Compound sentiment score (-1 to +1)
+
+### 3. Sentiment Classification Logic
+
+- Polarity > 0.1 → Positive  
+- Polarity < -0.1 → Negative  
+- Otherwise → Neutral  
+
+### 4. Confidence Score
+
+Confidence Score =  
+(|Polarity| + |VADER Compound|) / 2  
+
+This metric estimates sentiment reliability.
+
+---
+
+## Reports Included
+
+The repository contains three structured sentiment reports:
+
+- `Client_Review_Sentiment_Report.csv`
+- `Client_Review_Sentiment_Report1.csv`
+- `Client_Review_Sentiment_Report2.csv`
 
 Each report includes:
 
-Original Review
-Cleaned Review
-Polarity
-Subjectivity
-VADER Score
-Sentiment Label
-Confidence Score
+- Original Review  
+- Cleaned Review  
+- Polarity  
+- Subjectivity  
+- VADER Compound Score  
+- Sentiment Label  
+- Confidence Score  
 
-INTERNSHIP CONTEXT
+---
 
-Developed during my internship under the guidance of Abhishek Jivrakh Sir, with Power BI mentorship from Kapil Kalgi Sir.
+## Technologies Used
 
-KEY LEARNINGS
+- Python  
+- Pandas  
+- NumPy  
+- TextBlob  
+- NLTK (VADER Sentiment Analyzer)  
+- Matplotlib  
+- Seaborn  
 
-Practical NLP implementation
-Combining multiple sentiment analysis methods
-Creating custom evaluation metrics
-Data visualization & structured reporting
-Version control using Git
+---
+
+## Internship Context
+
+This project was developed during my internship as part of client review analytics.
+
+Guided by:
+- **Abhishek Jivrakh Sir** (overall internship mentorship)
+- **Kapil Kalgi Sir** (Power BI mentorship)
+
+---
+
+## Key Learnings
+
+- Practical implementation of NLP techniques  
+- Combining multiple sentiment analysis methods  
+- Designing custom evaluation metrics  
+- Data visualization for sentiment trends  
+- Generating structured business reports  
+- Version control using Git  
+
+---
+
